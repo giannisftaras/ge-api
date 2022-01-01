@@ -1,0 +1,4 @@
+*.txt
+*.ini
+composer.phar
+composer.lock

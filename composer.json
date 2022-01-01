@@ -1,0 +1,37 @@
+{
+    "name": "giannisftaras/ge-api",
+    "description": "A PHP wrapper for the General Electric - SmartHQ API",
+    "version": "1.0.0",
+    "type": "library",
+    "homepage": "https://github.com/giannisftaras/ge-api",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Giannis Ftaras",
+            "email": "me@giannisftaras.dev",
+            "homepage": "https://giannisftaras.dev",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "simplehtmldom/simplehtmldom": "2.0-RC2"
+    },
+    "autoload": {
+        "psr-4": {
+            "GE\\": "src/"
+        },
+        "files": [
+            "src/geAPI/ge_class.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GE\\GEServiceProvider"
+            ]
+        }
+    }
+}
