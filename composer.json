@@ -16,10 +16,8 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.1.0",
-        "guzzlehttp/guzzle": "^7.4"
-    },
-    "require-dev": {
-        "simplehtmldom/simplehtmldom": "2.0-RC2"
+        "guzzlehttp/guzzle": "^7.4",
+        "simplehtmldom/simplehtmldom": "*"
     },
     "autoload": {
         "psr-4": {
