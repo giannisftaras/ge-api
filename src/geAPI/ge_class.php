@@ -107,7 +107,7 @@ class GE {
 
         #Extract the signature and CSRF tokens from the HTML
         $login_page = $login_page->getBody()->getContents();
-        $html = (new \simplehtmldom\HtmlDocument())->load($login_page);
+        $html = \voku\helper\HtmlDomParser::str_get_html($login_page);
         $signature = $html->find('input[name="signature"]')[0]->value;
         $csrf_token = $html->find('input[name="_csrf"]')[0]->value;
 

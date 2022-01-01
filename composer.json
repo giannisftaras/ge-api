@@ -13,11 +13,11 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=7.1.0",
-        "guzzlehttp/guzzle": "^7.4",
-        "simplehtmldom/simplehtmldom": "*"
+        "guzzlehttp/guzzle": "7.4",
+        "voku/simple_html_dom": "4.7.31"
     },
     "autoload": {
         "psr-4": {
