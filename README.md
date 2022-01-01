@@ -4,7 +4,7 @@ This library is a simple PHP wrapper for the General Electric / SmartHQ API. At 
 Additional required libraries (included in the main package):
 
  -  [GuzzleHTTP](https://github.com/guzzle/guzzle): for the API calls
- - [SimpleHTMLDOM](https://github.com/simplehtmldom/simplehtmldom):  for the login process
+ - [SimpleHTMLDOM](https://github.com/voku/simple_html_dom):  for the login process
 
 #### Supported devices:
  - Split Air Conditioner
