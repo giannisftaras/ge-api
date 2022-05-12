@@ -47,8 +47,12 @@ class User extends GE {
         $all_appliances = $this->list_appliances();
         $appliances_objects = [];
         foreach ($all_appliances as $appliance) {
+            print_r($appliance);
             switch ($appliance['type']) {
                 case 'Split Air Conditioner':
+                    $appliances_objects[] = new AC($appliance);
+                    break;
+                case 'Portable AC':
                     $appliances_objects[] = new AC($appliance);
                     break;
                 default:
