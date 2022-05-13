@@ -51,6 +51,9 @@ class User extends GE {
                 case 'Split Air Conditioner':
                     $appliances_objects[] = new AC($appliance);
                     break;
+                case 'Portable AC':
+                    $appliances_objects[] = new AC($appliance);
+                    break;
                 default:
                     $appliances_objects[] = new Generic($appliance);
                     break;
